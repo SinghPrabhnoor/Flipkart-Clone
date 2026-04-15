@@ -447,7 +447,7 @@ async function seed() {
     console.log('✅ Tables reset');
 
     // Create default user
-    const user = await User.create({ name: 'Yash Verma', email: 'yash@flipkart.com', phone: '9876543210' });
+    const user = await User.create({ name: 'Prabh Singh', email: 'prabh@gmail.com', phone: '9876543210' });
     console.log('✅ Default user created');
 
     // Create categories
