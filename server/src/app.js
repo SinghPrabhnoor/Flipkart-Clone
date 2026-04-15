@@ -14,7 +14,11 @@ const wishlistRoutes = require('./routes/wishlist');
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000', process.env.FRONTEND_URL],
+  origin: function (origin, callback) {
+    // Dynamically allow any origin based on the request
+    // This is the easiest way to avoid CORS mismatch in production
+    callback(null, origin || true);
+  },
   credentials: true,
 }));
 app.use(express.json());
