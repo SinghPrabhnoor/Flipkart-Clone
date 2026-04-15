@@ -20,7 +20,7 @@ const CheckoutPage = () => {
   const [submitting, setSubmitting] = useState(false);
 
   const [form, setForm] = useState({
-    name: 'Yash Verma',
+    name: 'Prabh Singh',
     phone: '9876543210',
     pincode: '140401',
     address_line: '42, Sector 7, Phase-2',
