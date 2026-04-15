@@ -8,6 +8,8 @@ const categories = [
   { name: 'Books', slug: 'books', icon: '📚' },
   { name: 'Sports', slug: 'sports', icon: '⚽' },
   { name: 'Toys', slug: 'toys', icon: '🧸' },
+  { name: 'Beauty & Grooming', slug: 'beauty', icon: '💄' },
+  { name: 'Automotive', slug: 'automotive', icon: '🚗' },
 ];
 
 const productsByCat = {
@@ -437,6 +439,59 @@ const productsByCat = {
       specifications: { 'Range': 'Up to 27m', 'Capacity': '6 darts', 'Dart type': 'Elite', 'Action': 'Slam-fire', 'Age': '8+', 'Batteries': 'None required' },
     },
   ],
+  beauty: [
+    {
+      name: 'Philips Norelco Multigroom Series 7000',
+      brand: 'Philips',
+      price: 3499,
+      original_price: 4999,
+      rating: 4.6,
+      rating_count: 5432,
+      stock: 120,
+      is_assured: true,
+      images: [
+        'https://plus.unsplash.com/premium_photo-1678125966601-523c13b19baf?w=600',
+        'https://images.unsplash.com/photo-1593356075200-cde4a70bbf94?w=600'
+      ],
+      description: 'All-in-one trimmer for face, head and body styling. DualCut technology for maximum precision.',
+      highlights: ['23 pieces for all your trimming needs', 'DualCut technology', 'Fully washable', '5 hour runtime'],
+      specifications: { 'Run time': '5 hours', 'Charging': '2 hours', 'Water resistant': 'Yes' },
+    },
+    {
+      name: 'LOREAL Paris Revitalift Hyaluronic Acid Serum',
+      brand: 'LOREAL',
+      price: 899,
+      original_price: 1099,
+      rating: 4.4,
+      rating_count: 12453,
+      stock: 350,
+      is_assured: true,
+      images: [
+        'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600'
+      ],
+      description: 'Intensely hydrating serum with 1.5% Hyaluronic Acid for plump, youthful skin.',
+      highlights: ['1.5% Hyaluronic Acid', 'Dermatologist tested', 'For all skin types', 'Non-greasy'],
+      specifications: { 'Volume': '30ml', 'Type': 'Serum', 'Skin Type': 'All' },
+    }
+  ],
+  automotive: [
+    {
+      name: 'Michelin High Pressure Tyre Inflator',
+      brand: 'Michelin',
+      price: 2499,
+      original_price: 3500,
+      rating: 4.5,
+      rating_count: 2134,
+      stock: 80,
+      is_assured: true,
+      images: [
+        'https://images.unsplash.com/photo-1590748118029-9dc4b1b6d0c7?w=600',
+      ],
+      description: 'High pressure digital tyre inflator for cars and bikes. Inflates a tyre in under 3 minutes.',
+      highlights: ['Digital gauge', 'Auto shut-off', 'Compact design', 'Long cable'],
+      specifications: { 'Voltage': '12V', 'Max Pressure': '100 PSI', 'Cable Length': '3 meters' },
+    }
+  ]
 };
 
 async function seed() {

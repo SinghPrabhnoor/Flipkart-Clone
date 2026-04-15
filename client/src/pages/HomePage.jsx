@@ -12,6 +12,8 @@ const CATEGORIES = [
   { label: 'Books', slug: 'books', icon: '📚' },
   { label: 'Sports', slug: 'sports', icon: '⚽' },
   { label: 'Toys', slug: 'toys', icon: '🧸' },
+  { label: 'Beauty & Grooming', slug: 'beauty', icon: '💄' },
+  { label: 'Automotive', slug: 'automotive', icon: '🚗' },
 ];
 
 const SORT_OPTIONS = [
