@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: flipkart-clone-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        value: "" # Requires dynamic input upon creation
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_NAME
+        value: flipkart_clone
+      - key: DB_USER
+        value: ""
+      - key: DB_PASSWORD
+        value: ""
+
+databases:
+  - name: flipkart-clone-db
+    plan: free
+    databaseName: flipkart_clone
+    user: render_admin
